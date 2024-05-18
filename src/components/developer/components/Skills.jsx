@@ -1,15 +1,28 @@
 import React from "react"
-import SkillsImg from "../../../assets/hcjnav.png.svg"
+import skill from "../../../assets/skill.png"
 
-const Skills = () => {
+const Skills = () => { 
+  const skillLeft = [skill, skill, skill, skill, skill]
+  const skillRight = [skill, skill, skill, skill, skill]
+
   return (
-    <div className="flex justify-center items-center mx-[164px] ">
-      <img src={SkillsImg} alt="" className="w-[540px] h-[360px] "/>
-      <div className="flex justify-center items-center flex-col ">
-        <p className="text-[51.3px] font-extrabold h-[65px] w-[373.31px] text-center ">Skills</p>
-        <p className="text-[19px] font-normal mt-3 text center">Some random Stuff and</p>
+    <div className="grid grid-flow-col gap-[40px] px-40">
+      <div className="flex items-center justify-center gap-5 flex-wrap">
+        {skillLeft?.map((s, index) => (
+          <img className="h-[120px] " src={s} key={index} alt="" />
+        ))}
       </div>
-      <img src={SkillsImg} alt="" className="w-[540px] h-[360px] "/>
+      <div className="flex justify-center items-center flex-col ">
+        <p className="text-[51.3px] font-extrabold text-center ">Skills</p>
+        <p className="text-[19px] font-normal mt-[22.76px] text center">
+          Some random Stuff and
+        </p>
+      </div>
+      <div className="flex items-center justify-center gap-5 flex-wrap">
+        {skillRight?.map((s, index) => (
+          <img className="h-[120px]" src={s} key={index} alt="" />
+        ))}
+      </div>
     </div>
   )
 }
