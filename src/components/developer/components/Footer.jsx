@@ -6,36 +6,36 @@ import message from "../../../assets/message-2.svg"
 import linkedin from "../../../assets/linkedin.svg"
 import twitter from "../../../assets/twitter.svg"
 import youtube from "../../../assets/youtube.svg"
+import { Link } from "react-router-dom"
+import stroke from "../../../assets/underline-small.svg.svg"
 const Footer = () => {
+  const links = [
+    { title: "LinkedIn", link: "https://www.linkedin.com/", image: linkedin },
+    { title: "Twitter", link: "https://www.twitter.com/", image: twitter },
+    { title: "Github", link: "https://www.github.com/", image: <FaGithub /> },
+    { title: "Youtube", link: "https://www.youtube.com/", image: youtube },
+  ]
+
   return (
-    <div className="flex font-ibm justify-evenly items-center bg-black w-full h-[400px] border-[2px] border-[#292524] rounded-[14px] gap-[100px]">
+    <div className="flex flex-col lg:flex-row mt-[100px] font-ibm justify-evenly items-center bg-[#292524] w-full py-10 lg:py-20 border-[2px] border-[#292524] rounded-t-[14px] gap-[50px] lg:gap-[100px]">
       <div className="text-white px-[125px]">
         <p className="text-[51.3px] font-extrabold font-sora ">Contact Us</p>
-        <p className="text-[19px] font-normal ">
-          Join 60k+ designers who read the UX Tools weekly newsletter. Improve
-          your skills and stay ahead of industry trends and changes in 5 minutes
-          a week.
+        <p className="text-[19px] font-normal relative">
+          Join 60k+ designers who read the UX Tools weekly newsletter. Improve your skills
+          and stay ahead of industry trends and changes in 5 minutes a week.
+          <img src={stroke} alt="" className="w-[31px] absolute left-10 top-6" />
+
         </p>
         <div className="flex items-center gap-8 mt-[33px]">
-          <div className="flex items-center gap-2">
-            <img src={linkedin} alt="" />
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
-          <div className="flex items-center gap-2">
-            <img src={twitter} alt="" />
-            <a href="https://twitter.com/">Twitter</a>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaGithub />
-            <a href="https://www.github.com">GitHub</a>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <img src={youtube} alt="" className="h-[20px]" />
-            <a href="https://www.youtube.com/">Youtube</a>
-          </div>
+          {links.map((l, index) => (
+            <div className="flex items-center gap-2">
+              {l.title === "Github" ? l.image : <img src={l.image} alt="" />}
+              <Link to={l.link}>{l.title}</Link>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-black gap-[20px] mr-[90px]">
+      <div className="flex flex-col justify-center items-center gap-[20px] mr-[90px]">
         <div className="flex bg-white items-center gap-2 rounded-[5px] px-[17px] ">
           <img src={user} alt="" />
           <input
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className="flex bg-white items-center gap-2 rounded-[5px] px-[17px]">
           <img src={mail} alt="" className="h-[20px]" />
-          <input 
+          <input
             type="text"
             placeholder="Email"
             className="border-[2px] border-white  py-[5px] w-[400px] outline-none"

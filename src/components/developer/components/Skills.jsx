@@ -14,8 +14,8 @@ const Skills = () => {
       </div>
       <div className="flex justify-center items-center flex-col ">
         <p className="text-[51.3px] font-extrabold text-center ">Skills</p>
-        <p className="text-[19px] font-normal mt-[22.76px] text center">
-          Some random Stuff and
+        <p className="text-[19px] font-normal text-center">
+          Some random Stuff and 
         </p>
       </div>
       <div className="flex items-center justify-center gap-5 flex-wrap">

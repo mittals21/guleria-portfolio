@@ -17,3 +17,8 @@ body {
 .slick-arrow {
   display: none !important;
 }
+
+#bg-landing{
+  background: linear-gradient(180deg, #E8EEF6 50%, #FFFFFF 100%);
+
+}

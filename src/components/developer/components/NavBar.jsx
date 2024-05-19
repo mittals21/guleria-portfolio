@@ -3,7 +3,7 @@ import Logo from "../../../assets/OIG 1 (1).svg"
 
 const NavBar = () => {
   return (
-    <div className="flex justify-evenly items-center mt-[47px]">
+    <div className="flex flex-wrap justify-evenly items-center pt-[47px]">
       <div className="flex items-center">
         <div className="flex justify-center bg-[#1B232E] px-[61px] rounded-[30px]">
           <img

@@ -11,8 +11,10 @@ const Developer = () => {
   return (
     <div>
       {/* Navbar,Hero(landing section),slider, skills,projects,expereience,footer */}
+      <div id="bg-landing">
       <NavBar />
       <Hero />
+      </div>
       <SliderTop/>
       <Skills />
       <Projects />

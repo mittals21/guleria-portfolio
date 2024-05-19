@@ -1,5 +1,6 @@
 import React from "react"
 import Card from "./Card"
+import lines from "../../../assets/lines.svg fill.svg"
 
 const Projects = () => {
   const cardData = [
@@ -27,8 +28,16 @@ const Projects = () => {
 
   return (
     <div className="mt-[130px]">
-      <div className="flex items-center justify-center flex-col">
-        <p className="text-[51.3px] font-extrabold  ">Projects</p>
+      <div className="flex items-center justify-center flex-col ">
+        <div className="relative">
+          <img
+            src={lines}
+            alt=""
+            className="absolute h-[80px] w-[80px] -top-[30px] -left-[50px] "
+          />
+
+          <p className="text-[51.3px] font-extrabold  ">Projects</p>
+        </div>
         <p className="text-[19px]   ">Some random Stuff</p>
       </div>
       <div className="flex items-center justify-center flex-wrap">
