@@ -51,7 +51,7 @@ const SliderTop = () => {
     <div className=" bg-gradient-to-r from-[#1861D9] to-[#28C0EF] py-4 my-[145px]">
       <Slider {...settings}>
         {slideImg?.map((img, index) => (
-          <img className="h-[150px] px-1.5" src={img} key={index} alt="" />
+          <img className="h-[175px] px-1.5" src={img} key={index} alt="" />
         ))}
       </Slider>
     </div>

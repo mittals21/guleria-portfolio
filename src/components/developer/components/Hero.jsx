@@ -23,12 +23,13 @@ const Hero = () => {
           Me as a
         </p>
         <div className="flex justify-center items-center gap-[24px] mt-[17.6px] ">
+        <button className="border-[2px] border-[#0568FD] bg-[#0568FD] leading-[24px] rounded-[8px] py-[12px] text-[15px] text-[#FFFFFF] font-semibold w-[169.39px] ">
+            Developer
+          </button>
           <button className="flex justify-center items-center border-[2px] leading-[24px] border-black rounded-[8px] font-semibold text-[15.13px] py-[12px] w-[192.77px]">
             Designer
           </button>
-          <button className="border-[2px] border-[#0568FD] bg-[#0568FD] leading-[24px] rounded-[8px] py-[12px] text-[15px] text-[#FFFFFF] font-semibold w-[169.39px] ">
-            Developer
-          </button>
+          
         </div>
       </div>
     </div>

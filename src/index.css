@@ -22,3 +22,46 @@ body {
   background: linear-gradient(180deg, #E8EEF6 50%, #FFFFFF 100%);
 
 }
+
+.makeFlex{
+  display: flex !important;
+
+}
+
+#Main{
+  position: relative;
+
+  .slick-arrow{
+    display: block !important;
+    position: absolute;
+
+  }
+  
+  .slick-prev {
+    background: url("/src/assets/arrows.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 45px !important;
+    width: 45px !important;
+    z-index: 10 !important;
+    transform: translate(-170%, -50%) !important;
+  }
+  
+  .slick-next {
+    background: url("/src/assets/arrows.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 45px !important;
+    width: 45px !important;
+    z-index: 10 !important;
+    transform: translate(-170%, -50%) !important;
+  }
+  
+   .slick-arrow:before {
+    content: none !important;
+  }
+
+  
+}
