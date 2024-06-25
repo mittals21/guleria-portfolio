@@ -26,8 +26,6 @@ body {
 }
 
 #Main {
-  position: relative;
-
   .slick-arrow {
     display: block !important;
     position: absolute;
@@ -45,7 +43,7 @@ body {
   }
 
   .slick-next {
-    background: url("/src/assets/arrows.svg") !important;
+    background: url("/src/assets/arrow-white.svg") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
@@ -59,8 +57,6 @@ body {
     content: none !important;
   }
 }
-
-
 
 ::-webkit-scrollbar {
   width: 0;

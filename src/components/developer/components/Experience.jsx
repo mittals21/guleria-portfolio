@@ -66,27 +66,24 @@ const Experience = () => {
   }
 
   return (
-    <div className="flex flex-col gap-[50px] relative overflow-hidden mt-[100px] py-[50px] "  id="Main" >
-      <div className="flex items-center justify-center flex-col ">
+    <div className="mt-[100px] py-[50px]" id="Main">
+      <div className="flex items-center justify-center flex-col">
         <div className="relative">
           <img
             src={lines}
             alt=""
-            className="absolute h-[80px] w-[80px] -top-[30px] -left-[50px] z-30 "
+            className="absolute h-[80px] w-[80px] -top-[30px] -left-[50px] z-30"
           />
 
-          <p className="text-[51.3px] font-extrabold  ">Experience</p>
+          <p className="text-[51.3px] font-extrabold">Experience</p>
         </div>
-        <p className="text-[19px]   ">Some random Stuff</p>
+        <p className="text-[19px]">Some random Stuff</p>
       </div>
-      
-      <Slider
-        {...settings}
-        className="bg-[#292524] p-[65px] rounded-[105px] absolute left-[95px] "
-      >
+
+      <Slider {...settings} className="bg-[#292524] mt-[50px] py-[35px] rounded-l-[105px] ml-40">
         {sliderData?.map((sd, index) => (
-          <div className="makeFlex justify-center items-center gap-[40px] ">
-            <div className="flex flex-col justify-center items-start gap-[20px] pr-[100px]">
+          <div className="makeFlex justify-center items-center gap-[100px]">
+            <div className="flex flex-col justify-center items-start gap-[20px]">
               <div className="bg-[#E7FFFE] py-[10px] px-[30px] rounded-[8px] text-[#0B8981]">
                 {sd.role}
               </div>
