@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="flex justify-center items-center flex-col my-[85px] ">
         <div className="text-center">
           <p className="text-[52.17px] leading-[64.4px] font-bold ">
-            Hey, I am Abhishek Guleria
+            Hey, I am Abhishek Guleria.
           </p>
           <p className="text-[52.17px] leading-[64.4px] font-bold ">
             and I am a{" "}
